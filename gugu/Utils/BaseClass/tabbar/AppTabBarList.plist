@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>controllerName</key>
+		<string>GuguViewController</string>
+		<key>imageName</key>
+		<string>咕咕</string>
+		<key>imageSelect</key>
+		<string>咕咕a</string>
+		<key>title</key>
+		<string>咕咕</string>
+	</dict>
+	<dict>
+		<key>controllerName</key>
+		<string>ContractListNewController</string>
+		<key>imageName</key>
+		<string>通讯录</string>
+		<key>imageSelect</key>
+		<string>通讯录a</string>
+		<key>title</key>
+		<string>通讯录</string>
+	</dict>
+	<dict>
+		<key>controllerName</key>
+		<string>MineViewController</string>
+		<key>imageName</key>
+		<string>我的</string>
+		<key>imageSelect</key>
+		<string>我的a</string>
+		<key>title</key>
+		<string>我的</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CB_RouteBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-XO-J8j">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="zcy-x9-Uu2"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odK-wb-nOL">
+                    <rect key="frame" x="20" y="100" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="y8e-mD-JKd"/>
+                    </constraints>
+                    <state key="normal" title="偏好">
+                        <color key="titleColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action_pianhao:" destination="iN0-l3-epB" eventType="touchUpInside" id="ErK-qe-o0P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRb-AU-5dl">
+                    <rect key="frame" x="120" y="100" width="235" height="40"/>
+                    <state key="normal" title="开启导航">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="action_go:" destination="iN0-l3-epB" eventType="touchUpInside" id="s3E-fL-Iup"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hRb-AU-5dl" secondAttribute="trailing" constant="20" id="1O9-gt-lY6"/>
+                <constraint firstItem="hRb-AU-5dl" firstAttribute="height" secondItem="odK-wb-nOL" secondAttribute="height" id="9Sm-3D-JNe"/>
+                <constraint firstItem="odK-wb-nOL" firstAttribute="top" secondItem="r4f-XO-J8j" secondAttribute="bottom" constant="10" id="B1x-Us-NUv"/>
+                <constraint firstItem="hRb-AU-5dl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120" id="IwB-yF-ykh"/>
+                <constraint firstAttribute="bottom" secondItem="odK-wb-nOL" secondAttribute="bottom" constant="10" id="UBw-XV-n7j"/>
+                <constraint firstItem="r4f-XO-J8j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZdS-w1-71j"/>
+                <constraint firstItem="odK-wb-nOL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="aLU-gv-4Mg"/>
+                <constraint firstAttribute="trailing" secondItem="r4f-XO-J8j" secondAttribute="trailing" id="boI-hM-OTj"/>
+                <constraint firstItem="hRb-AU-5dl" firstAttribute="top" secondItem="odK-wb-nOL" secondAttribute="top" id="kbT-eD-516"/>
+                <constraint firstItem="r4f-XO-J8j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qvG-Zl-Wtx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_go" destination="hRb-AU-5dl" id="D0I-oo-BH8"/>
+                <outlet property="btn_pianhao" destination="odK-wb-nOL" id="jEs-ty-RIt"/>
+                <outlet property="constrain_toRight" destination="IwB-yF-ykh" id="EC0-LH-VID"/>
+                <outlet property="view_content" destination="r4f-XO-J8j" id="6VZ-j0-0Kt"/>
+            </connections>
+            <point key="canvasLocation" x="128.80000000000001" y="408.39580209895058"/>
+        </view>
+    </objects>
+</document>

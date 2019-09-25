@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CB_RouteBottomCell" id="gTV-IL-0wX" customClass="CB_RouteBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTZ-Cg-LHn">
+                        <rect key="frame" x="0.0" y="5" width="110" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Gp4-xL-AfQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22小时33分钟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="8qA-om-eUa">
+                        <rect key="frame" x="0.0" y="30" width="110" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lza-r2-Azd">
+                        <rect key="frame" x="0.0" y="54.5" width="110" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kTZ-Cg-LHn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Dnw-eW-awO"/>
+                <constraint firstItem="Lza-r2-Azd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EgC-wf-D0Q"/>
+                <constraint firstItem="Lza-r2-Azd" firstAttribute="top" secondItem="8qA-om-eUa" secondAttribute="bottom" constant="3" id="GSB-Ur-FAq"/>
+                <constraint firstAttribute="trailing" secondItem="Lza-r2-Azd" secondAttribute="trailing" id="GWt-Do-t6B"/>
+                <constraint firstItem="8qA-om-eUa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ghg-wF-eSx"/>
+                <constraint firstAttribute="trailing" secondItem="kTZ-Cg-LHn" secondAttribute="trailing" id="QKG-Yg-t4Q"/>
+                <constraint firstItem="kTZ-Cg-LHn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dEB-01-OOC"/>
+                <constraint firstItem="kTZ-Cg-LHn" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dbe-Xh-fYm"/>
+                <constraint firstItem="8qA-om-eUa" firstAttribute="top" secondItem="kTZ-Cg-LHn" secondAttribute="bottom" constant="5" id="nzE-Dx-MM3"/>
+                <constraint firstItem="8qA-om-eUa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oYe-R9-cyX"/>
+                <constraint firstAttribute="trailing" secondItem="8qA-om-eUa" secondAttribute="trailing" id="y5m-HP-HSr"/>
+            </constraints>
+            <size key="customSize" width="164" height="66"/>
+            <connections>
+                <outlet property="lbl_distance" destination="Lza-r2-Azd" id="Xfc-UP-HgD"/>
+                <outlet property="lbl_time" destination="8qA-om-eUa" id="C4c-53-qGI"/>
+                <outlet property="lbl_way" destination="kTZ-Cg-LHn" id="bfE-3M-xnY"/>
+            </connections>
+            <point key="canvasLocation" x="152" y="143.92803598200899"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContractShareFriendHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="570-ij-DJh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择一个群" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWY-BQ-8dt">
+                            <rect key="frame" x="15" y="17" width="87" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_more.png" translatesAutoresizingMaskIntoConstraints="NO" id="nyN-N2-zgY">
+                            <rect key="frame" x="349.5" y="18.5" width="10.5" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nyN-N2-zgY" secondAttribute="height" multiplier="16:28" id="W9V-p3-w4D"/>
+                                <constraint firstAttribute="height" constant="18" id="yuu-Gm-kEy"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K07-gc-Nnv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                            <connections>
+                                <action selector="action_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="gMe-vr-ayb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="K07-gc-Nnv" secondAttribute="trailing" id="5Wd-ff-i34"/>
+                        <constraint firstItem="FWY-BQ-8dt" firstAttribute="leading" secondItem="570-ij-DJh" secondAttribute="leading" constant="15" id="6Zv-LS-7Yc"/>
+                        <constraint firstItem="nyN-N2-zgY" firstAttribute="centerY" secondItem="570-ij-DJh" secondAttribute="centerY" id="7f2-VY-D4G"/>
+                        <constraint firstItem="K07-gc-Nnv" firstAttribute="leading" secondItem="570-ij-DJh" secondAttribute="leading" id="JUl-aX-Xpz"/>
+                        <constraint firstAttribute="height" constant="55" id="R9k-kR-P0q"/>
+                        <constraint firstAttribute="trailing" secondItem="nyN-N2-zgY" secondAttribute="trailing" constant="15" id="its-XJ-XYu"/>
+                        <constraint firstItem="FWY-BQ-8dt" firstAttribute="centerY" secondItem="570-ij-DJh" secondAttribute="centerY" id="lGE-Sd-a4M"/>
+                        <constraint firstAttribute="bottom" secondItem="K07-gc-Nnv" secondAttribute="bottom" id="nK4-8I-ac0"/>
+                        <constraint firstItem="K07-gc-Nnv" firstAttribute="top" secondItem="570-ij-DJh" secondAttribute="top" id="oI7-29-Meq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I53-eD-154">
+                    <rect key="frame" x="16" y="55" width="65.5" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="I53-eD-154" secondAttribute="bottom" id="Agx-Nv-rbb"/>
+                <constraint firstItem="570-ij-DJh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IV2-tU-dKH"/>
+                <constraint firstItem="I53-eD-154" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="XLo-Wr-N9L"/>
+                <constraint firstItem="570-ij-DJh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y2A-Ih-1Vn"/>
+                <constraint firstAttribute="trailing" secondItem="570-ij-DJh" secondAttribute="trailing" id="Ymx-hb-nBE"/>
+                <constraint firstItem="I53-eD-154" firstAttribute="top" secondItem="570-ij-DJh" secondAttribute="bottom" id="vCJ-jL-BDv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="301.34932533733138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_more.png" width="16" height="28"/>
+    </resources>
+</document>

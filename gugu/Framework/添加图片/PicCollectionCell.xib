@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PicCollectionCell" id="gTV-IL-0wX" customClass="PicCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W9R-pd-8R4">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jB-lL-bah">
+                        <rect key="frame" x="94" y="0.0" width="20" height="22"/>
+                        <state key="normal" image="upDataCell_close.png"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="W9R-pd-8R4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0ii-ak-bwx"/>
+                <constraint firstAttribute="trailing" secondItem="W9R-pd-8R4" secondAttribute="trailing" id="4QG-kF-VC9"/>
+                <constraint firstItem="1jB-lL-bah" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dbs-iB-rIn"/>
+                <constraint firstAttribute="bottom" secondItem="W9R-pd-8R4" secondAttribute="bottom" id="OHM-cC-BDQ"/>
+                <constraint firstAttribute="trailing" secondItem="1jB-lL-bah" secondAttribute="trailing" id="ccd-qb-fVE"/>
+                <constraint firstItem="W9R-pd-8R4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fqz-Pd-EFW"/>
+            </constraints>
+            <connections>
+                <outlet property="cellDeleteButton" destination="1jB-lL-bah" id="bmX-Y4-3G3"/>
+                <outlet property="cellImageView" destination="W9R-pd-8R4" id="0jp-si-yc2"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="upDataCell_close.png" width="20" height="20"/>
+    </resources>
+</document>

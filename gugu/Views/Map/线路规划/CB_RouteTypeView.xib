@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CB_RouteTypeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKn-vx-xv4">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="55"/>
+                    <state key="normal" title="驾行">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="action_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="1T5-WX-tcB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAB-au-dh9">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="55"/>
+                    <state key="normal" title="骑行">
+                        <color key="titleColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="ikt-4M-8ng"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85B-XR-11f">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="55"/>
+                    <state key="normal" title="步行">
+                        <color key="titleColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ay5-HE-jkN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIB-Ub-iAQ">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="55"/>
+                    <state key="normal" title="公交">
+                        <color key="titleColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action_click:" destination="iN0-l3-epB" eventType="touchUpInside" id="dn4-K5-kgf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="85B-XR-11f" firstAttribute="height" secondItem="IAB-au-dh9" secondAttribute="height" id="3tr-4i-BXO"/>
+                <constraint firstItem="qKn-vx-xv4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DNL-Cu-Cr5"/>
+                <constraint firstItem="85B-XR-11f" firstAttribute="width" secondItem="IAB-au-dh9" secondAttribute="width" id="JvJ-DJ-P97"/>
+                <constraint firstItem="qKn-vx-xv4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KKn-r0-Nex"/>
+                <constraint firstItem="85B-XR-11f" firstAttribute="top" secondItem="IAB-au-dh9" secondAttribute="top" id="KVB-EJ-Mam"/>
+                <constraint firstItem="rIB-Ub-iAQ" firstAttribute="bottom" secondItem="85B-XR-11f" secondAttribute="bottom" id="MfW-cZ-tNp"/>
+                <constraint firstItem="rIB-Ub-iAQ" firstAttribute="width" secondItem="85B-XR-11f" secondAttribute="width" id="NIf-TB-ako"/>
+                <constraint firstItem="qKn-vx-xv4" firstAttribute="width" secondItem="IAB-au-dh9" secondAttribute="width" id="bVJ-md-eOS"/>
+                <constraint firstItem="85B-XR-11f" firstAttribute="leading" secondItem="IAB-au-dh9" secondAttribute="trailing" id="dch-sG-OMk"/>
+                <constraint firstItem="IAB-au-dh9" firstAttribute="height" secondItem="qKn-vx-xv4" secondAttribute="height" id="ffe-0m-gp0"/>
+                <constraint firstItem="rIB-Ub-iAQ" firstAttribute="top" secondItem="85B-XR-11f" secondAttribute="top" id="iHM-bV-Ssi"/>
+                <constraint firstAttribute="trailing" secondItem="rIB-Ub-iAQ" secondAttribute="trailing" id="k4Y-jA-C4N"/>
+                <constraint firstItem="IAB-au-dh9" firstAttribute="leading" secondItem="qKn-vx-xv4" secondAttribute="trailing" id="o5Q-1s-SUf"/>
+                <constraint firstAttribute="bottom" secondItem="qKn-vx-xv4" secondAttribute="bottom" id="pPf-Ax-fUi"/>
+                <constraint firstItem="IAB-au-dh9" firstAttribute="top" secondItem="qKn-vx-xv4" secondAttribute="top" id="waW-Qe-lMm"/>
+                <constraint firstItem="rIB-Ub-iAQ" firstAttribute="leading" secondItem="85B-XR-11f" secondAttribute="trailing" id="yPe-r0-2hs"/>
+                <constraint firstItem="qKn-vx-xv4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zwF-cd-XdV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="39.200000000000003" y="321.58920539730138"/>
+        </view>
+    </objects>
+</document>

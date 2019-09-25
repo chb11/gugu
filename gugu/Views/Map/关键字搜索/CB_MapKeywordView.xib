@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CB_MapKeywordView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search.png" translatesAutoresizingMaskIntoConstraints="NO" id="qZA-ir-9eO">
+                    <rect key="frame" x="8" y="8.5" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="gDX-eE-sgu"/>
+                        <constraint firstAttribute="width" secondItem="qZA-ir-9eO" secondAttribute="height" id="jj1-Py-hEA"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="关键字搜索" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFl-v3-hAw">
+                    <rect key="frame" x="41" y="9.5" width="286" height="21"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsy-I5-lY8">
+                    <rect key="frame" x="337" y="2" width="30" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="lsa-cx-alt"/>
+                    </constraints>
+                    <state key="normal" image="close.png"/>
+                    <connections>
+                        <action selector="action_clear:" destination="iN0-l3-epB" eventType="touchUpInside" id="8dR-d6-dEY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmn-BZ-Prb">
+                    <rect key="frame" x="0.0" y="0.0" width="337" height="40"/>
+                    <connections>
+                        <action selector="action_goSearch:" destination="iN0-l3-epB" eventType="touchUpInside" id="hv8-kO-sI1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tsy-I5-lY8" firstAttribute="leading" secondItem="ZFl-v3-hAw" secondAttribute="trailing" constant="10" id="2wE-Ai-DhO"/>
+                <constraint firstAttribute="bottom" secondItem="xmn-BZ-Prb" secondAttribute="bottom" id="Bor-13-NrL"/>
+                <constraint firstAttribute="trailing" secondItem="tsy-I5-lY8" secondAttribute="trailing" constant="8" id="FfI-ps-O6f"/>
+                <constraint firstItem="ZFl-v3-hAw" firstAttribute="leading" secondItem="qZA-ir-9eO" secondAttribute="trailing" constant="10" id="MG4-P3-me1"/>
+                <constraint firstItem="ZFl-v3-hAw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RNt-XI-uRv"/>
+                <constraint firstItem="qZA-ir-9eO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UDU-l9-bqh"/>
+                <constraint firstItem="tsy-I5-lY8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y8N-of-j76"/>
+                <constraint firstItem="qZA-ir-9eO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="j1x-1K-JKf"/>
+                <constraint firstItem="xmn-BZ-Prb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jSC-B4-MEB"/>
+                <constraint firstItem="tsy-I5-lY8" firstAttribute="leading" secondItem="xmn-BZ-Prb" secondAttribute="trailing" id="mO9-gN-HN3"/>
+                <constraint firstItem="xmn-BZ-Prb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oPh-1O-vqX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_clear" destination="tsy-I5-lY8" id="u7W-6O-XXW"/>
+                <outlet property="txt_keyword" destination="ZFl-v3-hAw" id="519-oS-owA"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="254.12293853073464"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="36" height="36"/>
+        <image name="search.png" width="26" height="26"/>
+    </resources>
+</document>
